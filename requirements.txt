@@ -13,7 +13,6 @@ keyring==10.6.0
 keyrings.alt==3.0
 pycparser==2.20
 pycrypto==2.6.1
-pygobject==3.26.1
 pyTelegramBotAPI==3.6.7
 pyxdg==0.25
 requests==2.23.0
