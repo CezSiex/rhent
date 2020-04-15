@@ -1,1 +1,2 @@
-TOKEN = '1280094759:AAElC1LObGtKaZ4v1BkxVPGCbsp4mnYS3_M' #Bot token from @BotFather
+import os
+TOKEN = os.environ('BOT_TOKEN') #Bot token from @BotFather
