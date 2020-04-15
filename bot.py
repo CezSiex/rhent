@@ -6,7 +6,7 @@ bot = telebot.TeleBot(config.TOKEN)
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
 	bot.reply_to(message, '( >_<)')
-@bot.message_handler(commands=['text'])
+@bot.message_handler1(commands=['text'])
 def send_message():
 	bot.send_message('take me 👿')
 
