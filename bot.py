@@ -3,7 +3,7 @@ import config
 
 bot = telebot.TeleBot(config.TOKEN)
 
-@bot.message_handler(commands=['start'])
+@bot.message_handler(commands=['Hey', 'hey', 'HEY', 'HEy', 'hEY', 'heY'])
 def send_start(message):
 	bot.send_message(message.chat.id, '( >_<)')
 
