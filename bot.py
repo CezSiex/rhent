@@ -8,7 +8,7 @@ def send_welcome(message):
 	bot.reply_to(message, '( >_<)')
 @bot.message_handler(func=lambda message:True, content_types=['text'])
 def send_message(text):
-	bot.send_message(text='take me 👿')
+	bot.send_message('take me 👿')
 
 #RUN
 bot.polling(none_stop= True)
