@@ -7,7 +7,7 @@ bot = telebot.TeleBot(config.TOKEN)
 def send_start(message):
 	bot.send_message(message.chat.id, '( >_<)')
 
-@bot.message_handler_1(commands=['text'])
+@bot.message_handler(commands=['text'])
 def send_text(message):
 	bot.send_message(message.chat.id,' take me ')
 
