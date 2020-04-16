@@ -11,5 +11,9 @@ def send_start(message):
 def send_text(message):
 	bot.send_message(message.chat.id,' take me - /photo')
 
+@bot.message_handler(commands=['photo'])
+def send_photo(message):
+	bot.send_photo(message.chat.id,'')
+
 #RUN
 bot.polling(none_stop= True)
