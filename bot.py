@@ -5,7 +5,7 @@ bot = telebot.TeleBot(config.TOKEN)
 
 @bot.message_handler(commands=['start'])
 def welcome(message):
-	bot.send_document(message.chat.id, 'https://media.giphy.com/media/11jHGdhiclR8UE/giphy.gif' or 'https://media.giphy.com/media/xdgisqRDFyO9G/giphy.gif'  )
+	bot.send_document(message.chat.id, 'https://media.giphy.com/media/11jHGdhiclR8UE/giphy.gif' and 'https://media.giphy.com/media/xdgisqRDFyO9G/giphy.gif'  )
 
 @bot.message_handler(commands=['Hey', 'hey', 'HEY', 'HEy', 'hEY', 'heY'])
 def send_start(message):
