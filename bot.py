@@ -13,7 +13,7 @@ def send_text(message):
 
 @bot.message_handler(commands=['photo'])
 def send_photo(message):
-	bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/blob/master/photo/photo_2020-04-16_10-11-48.jpg')
+	bot.send_photo(message.chat.id,'https://raw.githubusercontent.com/CezSiex/rhent/master/photo/photo_2020-04-16_10-11-48.jpg')
 
 #RUN
 bot.polling(none_stop= True)
