@@ -5,7 +5,7 @@ bot = telebot.TeleBot(config.TOKEN)
 
 @bot.message_handler(commands=['start'])
 def welcome(message):
-	bot.send_document(message.chat.id,'https://github.com/CezSiex/rhent/blob/master/photo/video_2020-04-16_13-53-18.mp4')
+	bot.send_document(message.chat.id,'https://github.com/CezSiex/rhent/blob/master/photo/gifv_1555842579_723889_gifv.mp4')
 
 @bot.message_handler(commands=['Hey', 'hey', 'HEY', 'HEy', 'hEY', 'heY'])
 def send_start(message):
