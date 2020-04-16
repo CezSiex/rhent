@@ -9,7 +9,7 @@ def send_start(message):
 
 @bot.message_handler(commands=['want'])
 def send_text(message):
-	bot.send_message(message.chat.id,' take me ')
+	bot.send_message(message.chat.id,' take me - /photo')
 
 #RUN
 bot.polling(none_stop= True)
