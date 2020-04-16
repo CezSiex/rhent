@@ -19,5 +19,11 @@ def send_text(message):
 def send_photo(message):
 	bot.send_photo(message.chat.id,'https://raw.githubusercontent.com/CezSiex/rhent/master/photo/photo_2020-04-16_10-11-48.jpg')
 
+	
+@bot.message_handler(commands=['gif'])
+def gif(message):
+	bot.send_document(message.chat.id, 'https://media.giphy.com/media/oVREpe8qWMOqc/giphy.gif'  )	
+	
+	
 #RUN
 bot.polling(none_stop= True)
