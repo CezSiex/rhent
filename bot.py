@@ -11,7 +11,7 @@ def help(message):
 # Start
 @bot.message_handler(commands=['start'])
 def welcome(message):
-	bot.send_message(message.chat.id, 'I greet you --$ {0.first_name} $-- (>_<)\nMy name is {1.first_name} \ncheck -- /help # help list'.format(message.from_user, bot.get_me()) )
+	bot.send_message(message.chat.id, 'I greet you --$ {0.first_name} $-- (>_<)\nMy name is {1.first_name} \ncheck -- /help # help list \n{2}'.format(message.from_user, bot.get_me()), StarGif(message))
 
 def StarGif(message):
 	bot.send_document(message.chat.id, 'https://media.giphy.com/media/xdgisqRDFyO9G/giphy.gif')
