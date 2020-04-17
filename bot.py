@@ -6,8 +6,7 @@ bot = telebot.TeleBot(config.TOKEN)
 # Help list 
 @bot.message_handler(commands=['help'])
 def help(message):
-	bot.send_message(message.chat.id, '''This is help list (>_<) {0} 1.command -/hey  ''').format(/n)
-		
+	bot.send_message(message.chat.id, '''This is help list (>_<) 1.command -/hey  ''')		
 # Start
 @bot.message_handler(commands=['start'])
 def welcome(message):
