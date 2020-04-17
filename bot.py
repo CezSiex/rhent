@@ -11,7 +11,9 @@ def help(message):
 # Start
 @bot.message_handler(commands=['start'])
 def welcome(message):
-	bot.send_document(message.chat.id, 'I greet --/${name}$/ check -- /help # help list \nhttps://media.giphy.com/media/xdgisqRDFyO9G/giphy.gif \nНou are like a wanderer wandering from neotkudap '  ).format(message.from_user.id)
+	bot.send_message(message.chat.id, 'I greet --/${name}$/ check -- /help # help list'  ).format(message.from_user.id)
+	bot.send_document(message.chat.id, ' https://media.giphy.com/media/xdgisqRDFyO9G/giphy.gif '  )
+	bot.send_message(message.chat.id, 'Нou are like a wanderer wandering from neotkudap')
 
 @bot.message_handler(commands=['Hey', 'hey', 'HEY', 'HEy', 'hEY', 'heY'])
 def send_start(message):
@@ -33,4 +35,4 @@ def gif(message):
 
 		
 #RUN
-bot.polling(none_stop= True))
+bot.polling(none_stop= True)
