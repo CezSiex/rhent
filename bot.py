@@ -13,6 +13,7 @@ def help(message):
 def welcome(message):
 	bot.send_message(message.chat.id, 'I greet you --$ {0.first_name} $-- (>_<)\nMy name is {1.first_name} \ncheck -- /help # help list '.format(message.from_user, bot.get_me()))
 	bot.send_document(message.chat.id, 'https://media.giphy.com/media/xdgisqRDFyO9G/giphy.gif')
+	bot.send_message(message.chat.id, 'Нou are like a wanderer wandering from neotkudap')
 	
 @bot.message_handler(commands=['Hey', 'hey', 'HEY', 'HEy', 'hEY', 'heY'])
 def send_start(message):
