@@ -11,7 +11,7 @@ def help(message):
 # Start
 @bot.message_handler(commands=['start'])
 def welcome(message):
-	bot.send_message(message.chat.id, 'I greet --/${0}$/ check -- /help # help list'  ).format(message.from_user)
+	bot.send_message(message.chat.id, 'I greet you --/${0.first_name}$/ My name is - {1.first_name} \ncheck -- /help # help list'.format(message.from_user, bot.get_me()) )
 	
 
 @bot.message_handler(commands=['Hey', 'hey', 'HEY', 'HEy', 'hEY', 'heY'])
