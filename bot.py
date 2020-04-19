@@ -12,7 +12,7 @@ def welcome(message):
 	bot.send_document(message.chat.id, 'https://media.giphy.com/media/xdgisqRDFyO9G/giphy.gif')
 	
 	if (True == True):
-		time.sleep(4)
+		time.sleep(3)
 		bot.send_message(message.chat.id, 'You are like a wanderer wandering from neotkudap (')	
 	else:
 		print('Process stop')
@@ -42,7 +42,11 @@ def send_photo(message):
 # hentphoto
 @bot.message_handler(commands=['hentphoto'])
 def send_test(message):
-	bot.send_message(message.chat.id,"...here there is nothing yet... \nBut don't be upset i have - /want")
+	all_files_in_directory = os.listdir('https://github.com/CezSiex/rhent/tree/master/photo')
+	file = random.choice(all_files_in_directory)
+	doc = open('https://github.com/CezSiex/rhent/tree/master/photo' + '/' + file, 'rd')
+	bot.send_photo(chat_id, doc)
+
 
 # Help list 
 @bot.message_handler(commands=['help'])
