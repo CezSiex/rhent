@@ -1,2 +1,3 @@
-worker: python bot.py
 worker: python SaKirabot.py
+worker: python bot.py
+
