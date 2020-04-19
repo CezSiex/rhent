@@ -11,7 +11,7 @@ def welcome(message):
 	
 	if (True == True):
 		bot.send_message(message.chat.id, 'You are like a wanderer wandering from neotkudap (')
-		time.sleep(5)
+		time.sleep(60)
 	else:
 		print('Process stop')
 
