@@ -48,4 +48,4 @@ def help(message):
 	bot.send_message(message.chat.id, '''This is help list (>_<) -- # let's get started \n1$com -- /hey # HEY \n2$com -- /gif # check gif \n3$com -- /want # see \n4$com -- /photo # see photo Kera's \n5$com -- /hentphoto # ee baby \n6$com -- /help # Why?''')
 		
 #RUN
-bot.infinity_polling(True)
+bot.polling(none_stop=True)
