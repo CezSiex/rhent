@@ -1,6 +1,7 @@
 import telebot
 import config
 import random
+import os
 import time
 
 bot = telebot.TeleBot(config.TOKEN) 
@@ -42,9 +43,9 @@ def send_photo(message):
 # hentphoto
 @bot.message_handler(commands=['hentphoto'])
 def send_test(message):
-	all_files_in_directory = os.listdir('https://github.com/CezSiex/rhent/tree/master/photo')
+	all_files_in_directory = os.listdir('https://github.com/CezSiex/rhent/tree/master/photo/hPhoto/photo_kerabot')
 	file = random.choice(all_files_in_directory)
-	doc = open('https://github.com/CezSiex/rhent/tree/master/photo' + '/' + file, 'rd')
+	doc = open('https://github.com/CezSiex/rhent/tree/master/photo/hPhoto/photo_kerabot' + '/' + file, 'rd')
 	bot.send_photo(chat_id, doc)
 
 
