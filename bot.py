@@ -11,7 +11,7 @@ def welcome(message):
 	bot.send_document(message.chat.id, 'https://media.giphy.com/media/xdgisqRDFyO9G/giphy.gif')
 	
 	if (True == True):
-		time.sleep(5)
+		time.sleep(4)
 		bot.send_message(message.chat.id, 'You are like a wanderer wandering from neotkudap (')	
 	else:
 		print('Process stop')
