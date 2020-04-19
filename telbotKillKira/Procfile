@@ -1,1 +1,1 @@
-worker: python Kira_bot.py
+worker: python SaKirabot.py
