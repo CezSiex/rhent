@@ -42,7 +42,7 @@ def send_photo(message):
 # hentphoto
 @bot.message_handler(commands=['hentphoto'])
 def send_test(message): 
-	bot.send_photo(message.chat.id,random.choice(os.listdir('https://github.com/CezSiex/rhent/tree/master/photo/hPhoto/photo_kerabot')))     # random.choice(os.listdir('https://github.com/CezSiex/rhent/tree/master/photo/hPhoto/photo_kerabot'))
+	bot.send_photo(message.chat.id,random.choice(os.listdir('https://github.com/CezSiex/rhent/tree/master/photo/photo_kerabot')))     # random.choice(os.listdir('https://github.com/CezSiex/rhent/tree/master/photo/hPhoto/photo_kerabot'))
 
 
 # Help list 
