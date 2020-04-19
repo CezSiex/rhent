@@ -1,5 +1,6 @@
 import telebot
 import config
+import random
 import time
 
 bot = telebot.TeleBot(config.TOKEN) 
