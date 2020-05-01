@@ -1,5 +1,6 @@
 import telebot
 import config
+import random
 import time
 
 bot = telebot.TeleBot(config.TOKEN) 
@@ -43,9 +44,30 @@ def send_photo(message):
 # hentphoto
 @bot.message_handler(commands=['hentphoto'])
 def send_test(message): 
-	bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo1.jpg')  # random.choice(os.listdir('https://github.com/CezSiex/rhent/tree/master/photo/hPhoto/photo_kerabot'))
-	
-  
+	randomnumber = random.randint(1, 11)
+	if randomnumber == 1:
+		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo1.jpg')  # random.choice(os.listdir('https://github.com/CezSiex/rhent/tree/master/photo/hPhoto/photo_kerabot'))
+	if randomnumber == 2:
+		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo2.jpg')
+	if randomnumber == 3:
+		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo3.jpg')
+	if randomnumber == 4:
+  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo4.jpg')
+  	if randomnumber == 5:
+  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo5.jpg')
+  	if randomnumber == 6:
+  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo6.jpg')
+  	if randomnumber == 7:
+  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo7.jpg')
+  	if randomnumber == 8:
+  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo8.jpg')
+  	if randomnumber == 9:
+  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo9.jpg')
+  	if randomnumber == 10:
+  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo10.jpg')
+  	if randomnumber == 11:
+  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo11.jpg')
+
       # ------ open photo
    # ------ open photo
 
