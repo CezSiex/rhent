@@ -53,20 +53,6 @@ def send_test(message):
 		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo3.jpg')
 	if randomnumber == 4:
   		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo4.jpg')
-  	if randomnumber == 5:
-  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo5.jpg')
-  	if randomnumber == 6:
-  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo6.jpg')
-  	if randomnumber == 7:
-  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo7.jpg')
-  	if randomnumber == 8:
-  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo8.jpg')
-  	if randomnumber == 9:
-  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo9.jpg')
-  	if randomnumber == 10:
-  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo10.jpg')
-  	if randomnumber == 11:
-  		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo11.jpg')
 
       # ------ open photo
    # ------ open photo
