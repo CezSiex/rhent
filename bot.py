@@ -37,12 +37,18 @@ def send_text(message):
 @bot.message_handler(commands=['photo'])
 def send_photo(message):
 	bot.send_photo(message.chat.id,'https://raw.githubusercontent.com/CezSiex/rhent/master/photo/photo_2020-04-16_10-11-48.jpg')
-
+ 
+   # ------ open photo
+      # ------ open photo
 # hentphoto
 @bot.message_handler(commands=['hentphoto'])
 def send_test(message): 
-	bot.send_photo(message.chat.id,'https://raw.githubusercontent.com/CezSiex/rhent/master/photo/photo1.jpg')     # random.choice(os.listdir('https://github.com/CezSiex/rhent/tree/master/photo/hPhoto/photo_kerabot'))
-
+	bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo1.jpg')  # random.choice(os.listdir('https://github.com/CezSiex/rhent/tree/master/photo/hPhoto/photo_kerabot'))
+	bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo2.jpg')
+	bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo3.jpg')
+  
+      # ------ open photo
+   # ------ open photo
 
 # Help list 
 @bot.message_handler(commands=['help'])
