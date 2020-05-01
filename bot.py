@@ -44,7 +44,7 @@ def send_photo(message):
 # hentphoto
 @bot.message_handler(commands=['hentphoto'])
 def send_test(message): 
-	randomnumber = random.randint(1, 11)
+	randomnumber = random.randint(1, 4)
 	if randomnumber == 1:
 		bot.send_photo(message.chat.id,'https://github.com/CezSiex/rhent/tree/master/photo/photo1.jpg')  # random.choice(os.listdir('https://github.com/CezSiex/rhent/tree/master/photo/hPhoto/photo_kerabot'))
 	if randomnumber == 2:
